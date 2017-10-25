@@ -5,4 +5,5 @@ Zabbix Alert Script/Asterisk Agi script for generating phone escallations/oncall
 ![Alt text](/images/action.png?raw=true "configuration of zabbix action" )
 
 #### Generated email of oncall rotation:
+Email generated with: https://github.com/matcornic/hermes
 ![Alt text](/images/email.png?raw=true "example email of oncall rotation" )
