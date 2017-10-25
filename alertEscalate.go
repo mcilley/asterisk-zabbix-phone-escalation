@@ -9,7 +9,7 @@ import (
 	"time"
 	"strconv"
 	"sort"
-    "gopkg.in/gomail.v2"
+	"gopkg.in/gomail.v2"
    	"crypto/tls"
    	"os"
 	"log"
@@ -115,8 +115,8 @@ func genEmail( escTable [][]hermes.Entry ) string{
 	h := hermes.Hermes{
 		Product: hermes.Product{
 	 		Name: "CTT",
-	 		Link: "https://confluence.verizon.com/display/jiraops",
-	 		Logo: "https://jira.verizon.com/s/gtw654/72010/8e51d4d6cbd04bea6ba1c2d76e02e230/_/jira-logo-scaled.png",
+	 		Link: "<link address for email>",
+	 		Logo: "<logo address>",
 	 	},
 	}	
 	email, _ :=h.GenerateHTML( genHtmlEmail(escTable) )
@@ -128,7 +128,7 @@ func genHtmlEmail( table [][]hermes.Entry ) hermes.Email {
 
 	return hermes.Email{
 		Body: hermes.Body{
-			Name: "Collaboration Tools Team",
+			Name: "<Name of group>",
 			Intros: []string{
 				"The Current On-Call Rotation for this week is:",
 			},
